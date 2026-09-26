@@ -50,5 +50,8 @@ jobs:
       - name: Upstream Tests
         run: ./gradlew :mcu-upstream:test --scan
 
+      - name: Color Utilities Tests
+        run: ./gradlew :material-color-utilities:jvmTest :material-color-utilities:linuxX64Test --scan
+
       - name: Material Kolor Tests
         run: ./gradlew :material-kolor:jvmTest --scan

@@ -49,6 +49,9 @@ This library is written for Compose Multiplatform, and can be used on the follow
 - JVM (Desktop)
 - JavaScript/wasm (Browser)
 
+The Compose-free `material-color-utilities` artifact also targets macOS and Linux (`linuxX64`), so a
+Kotlin/Native server can generate the same schemes; see [Without compose](#without-compose).
+
 You can see it in action by using [MaterialKolor Builder](https://materialkolor.com).
 
 ## Inspiration
@@ -107,7 +110,8 @@ materialKolor = { module = "com.materialkolor:material-kolor", version.ref = "ma
 If you don't use Compose and don't need any of the extension functions provided by `material-kolor`,
 you can use the `material-color-utilities` artifact instead.
 It is a Kotlin Multiplatform port of
-Google's [Material Color Utilities](https://github.com/material-foundation/material-color-utilities).
+Google's [Material Color Utilities](https://github.com/material-foundation/material-color-utilities),
+and unlike `material-kolor` it is also published for `macosArm64` and `linuxX64`.
 
 ```toml
 [versions]

@@ -41,6 +41,8 @@ kotlin {
 
     macosArm64()
 
+    linuxX64()
+
     listOf(
         iosX64(),
         iosArm64(),
